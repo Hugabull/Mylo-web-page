@@ -13,6 +13,8 @@
 .nav ul{
     list-style: none;
     display: flex;
+    margin: 0px;
+    padding: 0px;
 }
 .nav a.active{
     color: rgb(236, 30, 185);
@@ -20,4 +22,17 @@
 
 body{
     background-color: bisque;
+}
+.p{
+    font-size: 20px;
+}
+#bible{
+    height: 80px;
+    display: block;
+}
+.bible{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
 }
