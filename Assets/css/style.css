@@ -1,0 +1,23 @@
+.nav a{
+    margin: 20px;
+    text-decoration: none;
+    color: rgb(143, 88, 194);
+}
+.nav a:hover{
+    color: red;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+}
+.nav a.active{
+    color: rgb(236, 30, 185);
+}
+
+body{
+    background-color: bisque;
+}
