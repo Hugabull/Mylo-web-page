@@ -16,6 +16,6 @@ bibbles.forEach(img => {
 
   bibbles.forEach(img => {
   const x = Math.random() * (container.clientWidth - img.offsetWidth);
-  const y = Math.random() * (container.clientWidth - img.offsetHeight);
+  const y = Math.random() * (container.clientHeight - img.offsetHeight);
   img.style.transform = `translate(${x}px, ${y}px)`;
 });
