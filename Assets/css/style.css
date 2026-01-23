@@ -57,3 +57,7 @@ body{
     text-decoration: none;
     font-size: 20;
 }
+
+.gameList a:hover{
+    color: rgb(255, 121, 226);
+}
