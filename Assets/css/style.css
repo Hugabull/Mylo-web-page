@@ -31,11 +31,18 @@ body{
   height: 80px;
 }
 
+
 .bibble{
   position: absolute;
   transition: transform 1s ease;
 }
 
+#bibbles {
+  position: relative;
+  width: auto;
+  height: 80vh;
+  overflow: hidden;
+}
 
 .collections ul{
     display: flex;
