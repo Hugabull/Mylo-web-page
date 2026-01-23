@@ -1,12 +1,19 @@
-const img = document.getElementById("bibble");
+const bibbles = document.querySelectorAll(".bibble");
 
-  img.addEventListener("mouseenter", () => {
-    const maxX = window.innerWidth - img.offsetWidth;
-    const maxY = window.innerHeight - img.offsetHeight;
+bibbles.forEach(img => {
+    img.addEventListener("mouseenter", () => {
+      const maxX = window.innerWidth - img.offsetWidth;
+      const maxY = window.innerHeight - img.offsetHeight;
 
-    const x = Math.random() * maxX;
-    const y = Math.random() * maxY;
+      const x = Math.random() * maxX;
+      const y = Math.random() * maxY;
 
-    img.style.left = `${x}px`;
-    img.style.top = `${y}px`;
+      img.style.transform = `translate(${x}px, ${y}px)`;
+    });
   });
+
+  bibbles.forEach(img => {
+  const x = Math.random() * (window.innerWidth - img.offsetWidth);
+  const y = Math.random() * (window.innerHeight - img.offsetHeight);
+  img.style.transform = `translate(${x}px, ${y}px)`;
+});

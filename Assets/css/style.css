@@ -26,16 +26,14 @@ body{
 .p{
     font-size: 20px;
 }
-#bibble{
-    height: 80px;
-    display: block;
-}
-.bibble img{
-  position: absolute;
+
+.bibbles img{
   height: 80px;
-  transition: top 0.5s ease, left 0.5s ease;
-  top: 120px;
-  left: 200px;
+}
+
+.bibble{
+  position: absolute;
+  transition: transform 1s ease;
 }
 
 
