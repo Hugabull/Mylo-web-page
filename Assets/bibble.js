@@ -1,4 +1,4 @@
-const img = document.getElementById("bible");
+const img = document.getElementById("bibble");
 
   img.addEventListener("mouseenter", () => {
     const maxX = window.innerWidth - img.offsetWidth;
