@@ -30,9 +30,20 @@ body{
     height: 80px;
     display: block;
 }
-.bible{
+.bible img{
+  position: absolute;
+  height: 80px;
+  transition: top 0.5s ease, left 0.5s ease;
+  top: 120px;
+  left: 200px;
+}
+
+
+.collections ul{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20%;
+    list-style: none;
+}
+.collections img{
+    height: 120px;
+    padding: 10px;
 }
