@@ -1,8 +1,16 @@
 .nav a{
-    margin: 20px;
+    margin: 0;
+    padding: 20px;
     text-decoration: none;
     color: rgb(143, 88, 194);
 }
+
+@media (max-width: 768px) {
+  .nav a {
+    margin: 10px 0;
+  }
+}
+
 .nav a:hover{
     color: red;
 }
@@ -11,6 +19,17 @@
     flex-direction: row;
     background-color: rgb(247, 169, 241);
 }
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .nav ul {
+    flex-direction: column;
+  }
+}
+
 .nav ul{
     list-style: none;
     display: flex;
@@ -64,9 +83,3 @@ body{
     color: rgb(255, 121, 226);
 }
 
-@media (max-width: 768px) {
-  .nav {
-    flex-direction: column;
-    height: auto;
-  }
-}
