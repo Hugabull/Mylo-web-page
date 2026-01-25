@@ -115,3 +115,14 @@ body{
     color: rgb(255, 121, 226);
 }
 
+.board button{
+    border: none;
+    color: blue;
+    font-size: 15px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.board button:hover{
+    cursor: pointer;
+}
