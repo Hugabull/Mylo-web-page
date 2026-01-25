@@ -75,6 +75,7 @@
 body{
     background-color: bisque;
     margin: 0;
+    transition: background-color 1s;
 }
 .p{
     font-size: 20px;
@@ -127,4 +128,60 @@ body{
 
 .board button:hover{
     cursor: pointer;
+}
+
+.nessie-box{
+    display: none;
+}
+
+.nessie-box.open{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
+    grid-template-rows: repeat(3, 150px);  /* 3 rows of fixed height */
+    gap: 10px;
+}
+
+#ness1{
+  grid-column: 2 / 2;
+  grid-row: 1 / 2;
+  height: 100px;
+  animation: flip 2s infinite ease-in-out;
+  transform-style: preserve-3d;
+}
+
+#ness2{
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  height: 100px;
+  animation: flip 2s infinite ease-in-out;
+  transform-style: preserve-3d;
+}
+
+#ness3{
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  height: 100px;
+  animation: flip 2s infinite ease-in-out;
+  transform-style: preserve-3d;
+}
+
+@keyframes flip {
+  0%   { transform: rotateY(0deg); }
+  50%  { transform: rotateY(180deg); }
+  100% { transform: rotateY(0deg); }
+}
+
+body.rainbow {
+  animation: rainbow 7s infinite linear;
+}
+
+@keyframes rainbow {
+  0%   { background-color: red; }
+  14%  { background-color: orange; }
+  28%  { background-color: yellow; }
+  42%  { background-color: green; }
+  57%  { background-color: blue; }
+  71%  { background-color: indigo; }
+  85%  { background-color: violet; }
+  100% { background-color: red; }
 }
