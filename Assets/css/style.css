@@ -23,6 +23,12 @@
     background-color: rgb(247, 169, 241);
 }
 
+.nav-toggle{
+    background: none;
+    border: none;
+    font-size: 30px;
+}
+
 .nav-links.open {
   display: flex;
   flex-direction: row;
@@ -54,11 +60,11 @@
   }
   .nav-links {
     display: none;
-    flex-direction: column;
   }
 
   .nav-links.open {
     display: flex;
+    flex-direction: column;
   }
 }
 
