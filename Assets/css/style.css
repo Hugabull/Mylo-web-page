@@ -117,10 +117,12 @@ body{
 
 .board button{
     border: none;
-    color: blue;
+    color: rgb(43, 112, 196);
+    background-color: rgba(243, 32, 32, 0.625);
     font-size: 15px;
     padding: 10px;
     margin: 5px;
+    border-radius: 5px;
 }
 
 .board button:hover{
