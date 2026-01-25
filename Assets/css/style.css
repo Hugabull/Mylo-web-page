@@ -9,6 +9,7 @@
 .nav{
     display: flex;
     flex-direction: row;
+    background-color: rgb(247, 169, 241);
 }
 .nav ul{
     list-style: none;
@@ -22,6 +23,7 @@
 
 body{
     background-color: bisque;
+    margin: 0;
 }
 .p{
     font-size: 20px;
@@ -60,4 +62,11 @@ body{
 
 .gameList a:hover{
     color: rgb(255, 121, 226);
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    height: auto;
+  }
 }
